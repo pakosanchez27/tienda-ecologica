@@ -1,0 +1,46 @@
+.producto-contenido{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .producto{
+       
+         margin: $separacion;
+         @include tablet{
+            @include grid(2, $separacion);
+        
+         }
+
+        .img-producto{
+            
+            
+            img{
+            width: 100%;
+            max-width: 100%;
+            }
+        }
+    }
+
+}
+
+.info-producto{
+    
+    p{
+        font-size: 1.7rem;
+    }
+    span{
+        font-size: 2rem;
+        color: $Vclaro;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+    }
+}
+.sugerencia{
+ margin: $separacion;
+ h2{
+    text-align: center;
+ }
+}

@@ -1,0 +1,29 @@
+.productos-contenido{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2{
+        text-align: center;
+        font-size: 4rem;
+        margin-bottom: auto;
+    
+    }
+
+    .cards-produtos{
+        display: flex;
+        flex-direction: column;
+        
+        @include telefono{
+            @include grid(2, $separacion);
+        }
+       
+        padding: $separacion;
+        @include tablet{
+            @include grid(4, 3rem);
+        }
+        
+        .card{
+            margin-bottom: 2rem;
+        }
+}
+}

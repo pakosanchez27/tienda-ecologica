@@ -1,0 +1,57 @@
+
+.blog-principal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+
+.tarjeta-principal{
+    background-color: gray;
+    width: 80%;
+    border-radius: 2rem;
+    padding: 2rem;
+    
+    margin: $separacion;
+    img{
+        width: 100%;
+        max-height: 35rem;
+    }
+    h3{
+        font-weight: $bold;
+        color: $Vclaro;
+    }
+    p{
+        font-size: 1.3rem;
+    }
+    hr{
+        max-width: 100%;
+        color: $Blanco;
+        
+    }
+}
+}
+
+.blog-cards{
+    @include  grid(2, $separacion);
+    align-items: center;
+   
+    .tarjeta{
+        background-color: gray;
+        padding: 2rem;
+        border-radius: 2rem;
+        max-width: 30rem;
+        
+        margin: 0 auto;
+
+    }
+    img{
+        width: 100%;
+    }
+    a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+}

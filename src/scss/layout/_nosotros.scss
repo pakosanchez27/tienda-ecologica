@@ -1,0 +1,36 @@
+.nosotros-contenido{
+    text-align: center;
+    h2{
+        font-size: 3rem;
+}
+}
+.base{
+    
+    margin: $separacion;
+        @include grid(1, 0);
+        max-width: 100%;
+    @include tablet{
+        @include grid(2, 1rem);
+        align-items: center;
+    }
+    .nosotros-img{
+        display: none;
+        @include tablet {
+            display: block;
+        }
+        img{
+            width: 100%;
+            
+            
+        }
+    }
+}
+.nosotros-info{
+    h3{
+        font-size: 3rem;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+}
