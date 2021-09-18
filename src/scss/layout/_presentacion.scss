@@ -1,0 +1,196 @@
+.contenido-principal{
+    margin-top: 0 auto;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center; 
+
+    .title{
+        font-size: 2rem;
+        
+    }
+    .info{
+        font-size: 1.8rem;
+        width: 50rem;
+        margin: auto;
+    }
+}
+.cards{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2rem;
+    
+    @include telefono{
+        @include grid(2, 2rem);
+    }
+    
+    @include tablet{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        column-gap: 2rem;
+        width: 120rem;
+    min-width: 120rem;
+    }
+
+}
+
+.card{
+    border-radius: 2rem;
+    background-color: $Blanco;
+    width: 25rem;
+    
+    img{
+        width: 100%;
+    }
+    .btn-verde{
+        display: none;
+        
+    }
+    
+    &:hover{
+        cursor: pointer;
+        transition: 4s;
+        box-shadow: -2px 5px 12px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 5px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 5px 12px 0px rgba(0,0,0,0.75);
+        .btn-verde{
+           
+            display: block;
+        }
+    }
+   
+    .des{
+        text-align: left;
+        padding: 1rem;
+       inline-size: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        .titulo{
+            font-size: 2rem;
+            font-weight: $bold;
+           
+        }
+        p{
+            color:$Negro;
+            margin: 0;
+        }
+       
+        
+    }
+
+}
+
+.contenedor-oferta{
+    max-width: 100%;
+    margin: $separacion;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+ 
+    @include tablet{
+        flex-direction: row;
+        height: 40rem;
+    }
+
+    background-color: $Vclaro;
+    
+    box-shadow: -2px 5px 12px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -2px 5px 12px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -2px 5px 12px 0px rgba(0,0,0,0.75);
+   
+}
+.oferta-img{
+    max-width: 100%;
+    height: 100%;
+    
+    
+    img{
+       max-width: 100%;
+        height: 100%;
+        
+    }
+  
+}
+.oferta-info{
+    text-align: center;
+    margin: auto;
+    padding: 2rem;
+    max-width: 100%;
+    h2{
+        color: $Blanco;
+        text-transform: uppercase;
+        font-size: 3rem;
+       
+    }
+    p {
+        font-size: 2rem;
+    }
+    @include tablet{
+        h2{
+            font-size: 3rem;
+        }
+        p{
+            font-size: 2rem;
+        }
+    }
+    .size{
+        padding: 2rem;
+        
+    }
+    
+}
+.motivacion-contenedor{
+    max-width: 100%;
+    margin: $separacion;
+    .motivacion{
+        max-width: 100%;
+        height: 100%;
+        img{
+            max-width: 100%;
+            height: 100%;
+        }
+    }
+}
+.invitacion{
+    background-color: $Vclaro;
+    border-radius: 2rem;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70% ;
+    height: 100%;
+    padding: 2rem;
+    @include tablet{
+        flex-direction: row;
+        height: 8rem;
+        padding: 0;
+    }
+    .texto{
+        font-size: 3rem;
+        margin: 0;
+        max-width: 100%;
+    }
+    .input{
+        width: 100%;
+        border: none;
+        border-radius: 2rem;
+        font-size: 1rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        @include tablet{
+            font-size: 2rem;
+        }
+    }
+
+}
+.formulario{
+    display: flex;
+}

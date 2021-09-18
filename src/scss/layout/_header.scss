@@ -1,0 +1,75 @@
+
+.header{
+    background-color: $Blanco;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   height: 100%;
+   position: hidden;
+    @include tablet{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+    }
+    .logo{
+        width: 25rem;
+       margin: 0;
+       @include telefono{
+        margin-left: $separacion;
+       }
+        
+        img{
+            max-width: 100%;
+        }
+    }
+    
+    
+}
+.navegacion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+    column-gap: 4rem;
+    
+
+    @include telefono{
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        display: flex;
+        
+    }
+    .enlace{
+        text-decoration: none;
+        color: $Vclaro;
+        font-size: 2rem;
+        text-transform: uppercase;
+        text-align: center;
+        &:hover{
+            cursor: pointer;
+            border-bottom: solid 1px $Vclaro;
+            
+        }
+        &:nth-child(5){
+            border: none;
+        }
+       
+    }
+    img{
+        width: 5rem;
+       
+        @include tablet{
+            margin-right: $separacion ;
+        }
+    }
+}
+.var{
+    display: none;
+    margin: 0 auto;
+    @include tablet{
+        display: none;
+    }
+}
