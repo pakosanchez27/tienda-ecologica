@@ -1,13 +1,14 @@
-.productos-contenido{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h2{
-        text-align: center;
-        font-size: 4rem;
-        margin-bottom: auto;
+ .productos-contenido{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     h2{
+         text-align: center;
+         font-size: 4rem;
+         margin-bottom: auto;
+         text-align: center;
     
-    }
+  }
 
     .cards-produtos{
         display: flex;
@@ -22,8 +23,6 @@
             @include grid(4, 3rem);
         }
         
-        .card{
-            margin-bottom: 2rem;
-        }
+        
 }
-}
+ }

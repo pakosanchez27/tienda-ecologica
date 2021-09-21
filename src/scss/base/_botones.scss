@@ -8,6 +8,7 @@
 }
 .btn-verde{
     background-color: $Vobscuro;
+    width: 100%;
 
 }
 .btn-negro{
@@ -15,4 +16,29 @@
     border: none;
     padding: 1rem;
     
+}
+
+
+
+
+.boton-amarillo {
+    @include boton($amarillo, inline-block);
+}
+
+.boton-amarillo-block {
+    @include boton($amarillo, block);
+    width: 100%
+}
+
+.boton-verde {
+    @include boton($Vobscuro, inline-block);
+   
+}
+.boton-rojo-block{
+    @include boton($rojo, block);
+    width: 100%;
+
+}
+.boton-verde-block{
+    @include boton($Vobscuro, block);
 }

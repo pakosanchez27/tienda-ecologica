@@ -339,11 +339,11 @@ template {
   display: none;
 }
 
+/** Media Queries **/
 html {
   font-size: 62.5%;
   box-sizing: border-box;
   display: block;
-  background-color: #242921;
 }
 
 *, *:before, *:after {
@@ -354,6 +354,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
   line-height: 1.8;
+  background-color: #242921;
 }
 
 .contenedor {
@@ -376,6 +377,20 @@ p {
   display: none;
 }
 
+.seccion {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.centrar {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.w-100 {
+  width: 100%;
+}
+
 .btn {
   padding: 0.5rem;
   border-radius: 2rem;
@@ -387,6 +402,7 @@ p {
 
 .btn-verde {
   background-color: #265C00;
+  width: 100%;
 }
 
 .btn-negro {
@@ -395,7 +411,130 @@ p {
   padding: 1rem;
 }
 
-/** Media Queries **/
+.boton-amarillo {
+  background-color: #E08709;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: inline-block;
+  border: none;
+}
+.boton-amarillo:hover {
+  background-color: #c77808;
+  cursor: pointer;
+}
+
+.boton-amarillo-block {
+  background-color: #E08709;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: block;
+  border: none;
+  width: 100%;
+}
+.boton-amarillo-block:hover {
+  background-color: #c77808;
+  cursor: pointer;
+}
+
+.boton-verde {
+  background-color: #265C00;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: inline-block;
+  border: none;
+}
+.boton-verde:hover {
+  background-color: #1b4300;
+  cursor: pointer;
+}
+
+.boton-rojo-block {
+  background-color: #ad1515;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: block;
+  border: none;
+  width: 100%;
+}
+.boton-rojo-block:hover {
+  background-color: #961212;
+  cursor: pointer;
+}
+
+.boton-verde-block {
+  background-color: #265C00;
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  display: block;
+  border: none;
+}
+.boton-verde-block:hover {
+  background-color: #1b4300;
+  cursor: pointer;
+}
+
+.formulario {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 2rem;
+  margin-top: 2rem;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.31);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+.formulario fieldset {
+  display: flex;
+  flex-direction: column;
+  font-size: 2rem;
+}
+.formulario input {
+  max-width: 100%;
+}
+.formulario input[type=submit] {
+  width: auto;
+}
+.formulario label {
+  font-weight: 700;
+  text-transform: uppercase;
+  display: block;
+}
+.formulario input:not([type=submit]),
+.formulario textarea,
+.formulario select {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid gray;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+.formulario textarea {
+  height: 20rem;
+}
+
 .header {
   background-color: #fff;
   display: flex;
@@ -596,9 +735,11 @@ p {
   border-radius: 2rem;
   background-color: #fff;
   width: 25rem;
+  height: 100%;
 }
 .card img {
-  width: 100%;
+  max-width: 100%;
+  height: 20rem;
 }
 .card .btn-verde {
   display: none;
@@ -734,10 +875,6 @@ p {
   }
 }
 
-.formulario {
-  display: flex;
-}
-
 .footer {
   display: block;
   margin-top: 5rem;
@@ -844,6 +981,7 @@ p {
   text-align: center;
   font-size: 4rem;
   margin-bottom: auto;
+  text-align: center;
 }
 .productos-contenido .cards-produtos {
   display: flex;
@@ -863,9 +1001,6 @@ p {
     gap: 3rem;
     grid-template-columns: repeat(4, 1fr);
   }
-}
-.productos-contenido .cards-produtos .card {
-  margin-bottom: 2rem;
 }
 
 .producto-contenido {
@@ -1100,4 +1235,137 @@ td img {
 .boton a {
   max-width: 100%;
   width: 100%;
+}
+
+.alerta {
+  padding: 1rem;
+  margin: 1rem;
+  text-align: center;
+  color: #fff;
+  border: none;
+  border-radius: 1rem;
+}
+
+.error {
+  background-color: #ad1515;
+}
+
+.exito {
+  background-color: #68A225;
+}
+
+.producto {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.31);
+  border-radius: 12px;
+  margin-top: 4rem;
+  width: 100%;
+  border-spacing: 0;
+  padding: 1rem;
+  text-align: center;
+}
+.producto thead {
+  background-color: #68A225;
+}
+.producto thead th {
+  color: #fff;
+  padding: 2rem;
+}
+.producto .imagen-tabla {
+  width: 10rem;
+}
+
+.imagen-small {
+  width: 30%;
+}
+
+.login-fondo {
+  width: 100%;
+  height: 100vh;
+  background-image: url("https://blog.naturlider.com/wp-content/uploads/2020/03/AdobeStock_309195144-post-dia-mundial-naturaleza.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.login-fondo .login {
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(255, 255, 255, 0.54);
+  border-radius: 12px;
+  border: 1px solid rgba(209, 213, 219, 0.3);
+}
+@media (min-width: 768px) {
+  .login-fondo .login {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 75%;
+    max-height: 60%;
+    margin: 10rem;
+  }
+}
+.login-fondo .login .login-img {
+  display: none;
+}
+@media (min-width: 768px) {
+  .login-fondo .login .login-img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+  }
+  .login-fondo .login .login-img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5rem;
+}
+.login-form h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 4rem;
+  margin: 0;
+}
+.login-form .login-formulario {
+  display: flex;
+  flex-direction: column;
+}
+.login-form .login-formulario label {
+  color: #fff;
+  font-size: 2rem;
+  width: 100%;
+}
+.login-form .login-formulario input {
+  border: none;
+  color: #fff;
+}
+.login-form .login-formulario .input {
+  border: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  border-radius: 1.7rem;
+  width: 100%;
+}
+.login-form .login-formulario .enviar {
+  width: 50%;
+  border-radius: 1rem;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.error-login {
+  color: #ad1515;
+  margin: 0;
 }
