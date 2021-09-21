@@ -1,0 +1,46 @@
+.formulario{
+    background-color: $Blanco;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.31);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        
+    }
+     input{
+        max-width: 100%;
+    }
+    input[type="submit"]{
+        width: auto;
+    }
+    label {
+        font-weight: $bold;
+        text-transform: uppercase;
+        display: block;
+    }
+    input:not([type="submit"]), 
+    textarea,
+    select {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: $Blanco;
+        border: 1px solid gray;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+    }
+    
+        textarea {
+            height: 20rem;
+        }
+       
+      
+}

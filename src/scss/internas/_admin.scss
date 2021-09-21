@@ -1,0 +1,50 @@
+.alerta{
+    padding: 1rem;
+    margin: 1rem;
+    text-align: center;
+    color:$Blanco;
+    border:none;
+    border-radius: 1rem;
+  
+}
+
+.error{
+    background-color: $rojo;
+}
+
+.exito{
+    background-color: $Vclaro;
+}
+
+
+.producto{
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.31);
+    border-radius: 12px;
+    margin-top: 4rem;
+    width: 100%;
+    border-spacing: 0;
+    padding: 1rem ;
+    text-align: center;
+
+
+    
+    
+
+    thead{
+        background-color: $Vclaro;
+        
+        th{
+            color:$Blanco;
+            padding: 2rem;
+            
+        }
+}
+.imagen-tabla{
+    width: 10rem;
+}
+}
+.imagen-small{
+    width: 30%;
+}
